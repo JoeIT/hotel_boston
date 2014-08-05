@@ -1,0 +1,40 @@
+<html>
+
+<script type="text/javascript">
+</script>	
+
+</head>
+
+<body>
+
+<h1>LISTA DE RESIDENTES</h1>
+
+<table align='center' class="css-table_list">
+	<tr>
+		<th>Fecha de ingreso</th>
+		<th>Nombre</th>
+		<th>Nacionalidad</th>
+		<th>Pieza</th>
+		<th>Identificación</th>
+		<th>Número de identificación</th>
+		<th> <a href='add.php'>AGREGAR</a> </th>
+	</tr>	
+<?php	
+	foreach($this->result as $client)
+	{
+?>
+	<tr>
+		<td><?php echo $client['registration_date']; ?></td>
+		<td><?php echo $client['names']; ?></td>
+		<td><?php echo $client['nationality']; ?></td>
+		<td><?php echo $client['assigned_room']; ?></td>
+		<td><?php echo $client['identification_type']; ?></td>
+		<td align='right'><?php echo $client['identification_number']; ?></td>
+	</tr>
+<?php }// Foreach end ?>
+
+</table>
+
+</body>
+
+</html>

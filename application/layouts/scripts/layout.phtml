@@ -1,0 +1,55 @@
+<?php
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html; charset=utf-8');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('HOTEL BOSTON COCHABAMBA');
+
+echo $this->doctype();
+?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<?php echo $this->headMeta(); ?>
+	<?php echo $this->headTitle(); ?>
+
+	<?php 
+    	echo $this->headLink()->prependStylesheet($this->baseUrl() . '/css/style.css');
+
+    	echo $this->headScript()->appendFile($this->baseUrl() . '/js/jquery-2.1.1.js','text/javascript');    	
+	?>
+			
+<script type="text/javascript">
+$(document).ready(function() {
+	//alert('Hello JQuery ')
+});
+
+</script>
+</head>
+
+<body>
+		<div id="container">
+			<div id="before-header">
+								
+			</div>
+			<div id="header">
+				<div id="main_logo">
+				</div>
+				
+				<div id="announcements_board" class="announcements">
+				</div>
+
+			</div>
+			<!-- end of header -->
+
+			<div id="content">
+					<?php echo $this->layout()->content; ?>
+			</div>
+			<!-- end of content -->
+
+			<div id="footer">
+				<strong>Copyright © <?php echo date('Y') ?></strong>
+			</div>
+			<!-- end of footer -->
+		</div>
+		<!-- end of container -->
+	</body>
+</html>

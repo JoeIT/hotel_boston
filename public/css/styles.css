@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color: #003B58;
+}
+
+th, label {
+	background-color: #7BC8A4;
+	color: #404040; 
+}
+
+td {
+	background-color: #A9DB5B;
+}
+
+.css-table_list tr:nth-child(even) {
+	background-color: #640E0E;
+}
+
+.sub {
+	background-color: #93648D;
+	color: white;	
+}
+
+.error {
+	background-color: red;
+	color: white;
+}
